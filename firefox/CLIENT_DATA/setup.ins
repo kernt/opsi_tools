@@ -1,0 +1,19 @@
+[Initial]
+Message "initializing Firefox Installation ..."
+ShowBitmap "%scriptpath%\Firefox-150x150.png" "Firefox"
+
+[Actions]
+ShowBitmap "%scriptpath%\Firefox-150x150.png" "Firefox"
+DefVar $FirefoxPath$
+set $FirefoxPath$="C:\Program Files (x86)\Mozilla Firefox"
+WinBatch_install_firefox
+DosBatch_Copy_HSU_Pool_Settings
+
+[WinBatch_install_firefox]
+"%SCRIPTPATH%\current_Firefox.exe" -ms
+
+[DosBatch_Copy_HSU_Pool_Settings]
+copy /Y "%SCRIPTPATH%\mozilla.cfg" "$FirefoxPath$"
+copy /Y "%SCRIPTPATH%\override.ini" "$FirefoxPath$"
+copy /Y "%SCRIPTPATH%\local-settings.js" "$FirefoxPath$\defaults\pref\"
+;break
