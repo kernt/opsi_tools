@@ -1,0 +1,1 @@
+# opsi product for Firefox
