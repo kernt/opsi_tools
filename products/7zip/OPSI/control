@@ -1,0 +1,29 @@
+[Package]
+version: 0
+depends: 
+incremental: False
+
+[Product]
+type: localboot
+id: 7zip
+name: 7-Zip
+description: 7-Zip Packet
+advice: 
+version: 9.20
+priority: 95
+licenseRequired: False
+productClasses: 
+setupScript: setup.ins
+uninstallScript: uninstall.ins
+updateScript: 
+alwaysScript: 
+onceScript: 
+customScript: 
+userLoginScript: 
+
+[Changelog]
+7zip (9.2-1) testing; urgency=low
+
+  * Initial package
+  
+  -- Tobias Kern <mail@FQDN.de> Thu, 21 Jul 2011 14:36:12 +0000
