@@ -1,0 +1,11 @@
+[Initial]
+Message "initializing 7-Zip UnInstallation ..."
+ShowBitmap "%scriptpath%\sevenZip.png" "7-Zip"
+
+[Actions]
+ShowBitmap "%scriptpath%\sevenZip.png" "7-Zip"
+Message "uninstalling 7-Zip ..."
+WinBatch_UnInstallSevenZip
+
+[WinBatch_UnInstallSevenZip]
+msiexec /qn /x "%SCRIPTPATH%\7z920.msi"
