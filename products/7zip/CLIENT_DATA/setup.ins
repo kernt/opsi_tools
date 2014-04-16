@@ -1,0 +1,14 @@
+[Initial]
+Message "initializing 7-Zip  Installation ..."
+ShowBitmap "%scriptpath%\sevenZip.png" "7-Zip"
+
+[Actions]
+ShowBitmap "%scriptpath%\sevenZip.png" "7-Zip"
+Message "installing 7-Zip ..."
+WinBatch_InstallSevenZip
+
+
+;20.09.2011 KH:  -x64 erstellt explorer-context&co
+[WinBatch_InstallSevenZip]
+;msiexec /qn /i "%SCRIPTPATH%\7z920.msi"
+msiexec /passive /i %SCRIPTPATH%\7z920-x64.msi
