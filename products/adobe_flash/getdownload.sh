@@ -7,8 +7,8 @@
 #
 #
 #
-# Info  : Da mann nicht die version die heruntergeleden hat mit boardmitel herausbekomme kann ist noch ein blick auf die folgede Webadresse notwendig
-# http://www.adobe.com/de/software/flash/about/ hier kann mit hilfe von grep und awk auch nach der aktullen Version von flash gesucht werden.
+# Info  : Da man nicht die version die heruntergeleden wurde mit boardmitel herausbekomme kann, ist noch ein blick auf die folgede Webadresse notwendig
+# http://www.adobe.com/de/software/flash/about/ notwendig. Hier kann mit hilfe von grep und awk auch nach der aktullen Version von flash gesucht werden.
 # Am besten ist hierfuer der Tag
 #...                                    <table class="data-borad max"> <tbody>
 #                                       <tr></tr>
@@ -16,7 +16,8 @@
 #                                       <td rowspan="4">
 #                                       <tr></tr>
 #                                       <tr>$FLASHVERSION</tr>
-#
+# ...
+# zu verwenden, da er eindeutig auffindbar ist und weiter verarbeitet werden kann.
 # cat < index.html  | grep -A 1 '<td>Internet Explorer (und andere Browser, die Internet Explorer ActiveX-Steuerelemente und Plug-ins unterst&uuml;tzen)</td>' | tail -n1
 # die <td></td> tags müssten noch entvernt werden.
 
