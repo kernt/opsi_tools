@@ -1,7 +1,6 @@
 #!/bin/bash
 # Script : getdownload.sh
 # Author : Tobias Kern
-# Contact: kernt@hsu-hh.de
 #
 #
 #
